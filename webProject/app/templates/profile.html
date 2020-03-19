@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Detailed User</title>
+    <link rel="stylesheet" href="add.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body id="text">
+    <div class="container">
+        <img src="http://www.stickpng.com/assets/images/58582c01f034562c582205ff.png" class="img-rounded" height="300" width="450">
+        <h1>Details on {{user.username}}</h1>
+
+        <!-- picture here or some gay shit idk -->
+        <table class="table table-bordered table-hover">
+            <tbody>
+                <tr>
+                    <td>
+                        <p>User Username: </p>
+                    </td>
+                    <td>{{user.username}}</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        <p>User First Name: </p>
+                    </td>
+                    <td>{{user.first_name}}</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>User Last Name: </p>
+                    </td>
+                    <td>{{user.last_name}}</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>User E-Mail: </p>
+                    </td>
+                    <td>{{user.email}}</td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>User Password: </p>
+                    </td>
+                    <td>{{user.password}}</td>
+                </tr>
+
+
+
+                Delete Profile: <a href="{% url 'removeUser' user.username %}"> Click Here! </a>
+
+    </div>
+    </tbody>
+
+    </table>
+</body>
+
+</html>

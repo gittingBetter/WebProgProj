@@ -1,0 +1,84 @@
+body,div,p,
+header,hgroup,h1,h2{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background: black;
+	color: #070706;
+	font-family: inherit;
+	font-size: 30px;
+    background-image:url('https://i.gifer.com/H0uT.gif');
+    background-size: 200px 100px;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    line-height:normal;
+}
+
+.navbar a{
+    float: left;
+    font-size: 16px;
+    color:black;
+    text-align: left;
+    padding: 20px 20px;
+}
+.navbar a:hover, .dropdown:hover .dropbtn1, .dropdown:hover .dropbtn2, .dropdown:hover .dropbtn3{
+    background-color:rgb(9, 100, 228);
+}
+  
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color:white;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+}
+  
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.dropdown{
+    float: left;
+}
+  
+.dropdown .dropbtn1, .dropdown .dropbtn2, .dropdown .dropbtn3{
+    font-size: 15px; 
+    border:double;
+    color: white;
+    padding: 10px 100px;
+    background-color: inherit;
+    font: inherit; 
+}
+
+.topnav{
+    overflow: hidden;
+    background-color:black;
+}
+  
+.topnav input[type = search]{
+    float: right;
+    padding: 6px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border:double;border-color:black;
+    font-size: 18px;
+}
+
+.navbar{
+    overflow: hidden;
+    background-color:black;
+	color:whitesmoke;
+    font-family:"Harrington";
+    font-size: 30px;
+}
+
+#wrapper{
+	margin: 40px auto;
+    width: 900px;
+    text-align: center;
+    border: double;
+    /* background-image:url('https://www.colourbox.com/preview/22684091-transparent-light-blue-crown-from-splash-of-water.jpg');     */
+}

@@ -1,0 +1,88 @@
+<!-- <title>Login to Account</title>
+<h1>Login</h1>
+<form method="POST" class="post-form" action="{% url 'login' %}" enctype="multipart/form-data">
+    {% csrf_token %}
+    
+    <label for="id_username">
+      Username: 
+    </label>
+    <input type="text" id="id_username" maxlength="30" name="username">
+
+    <label for="id_password">
+      Password:
+    </label>
+    <input id="id_password" maxlength="30" name="password" type="password">
+
+    <button type="submit" class="save btn btn-success"> Login </button>
+</form>
+<br>
+No Account? No Problem! <a href="{% url 'register' %}"> Click Here! </a> to Register for an account.  -->
+
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset = "UTF-8"/>
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+	<title> Tweet Tweet </title>
+	
+	<link rel = "icon" href = "img/twitter.jpg"/>
+	<link rel = "stylesheet" href = "static/css/main.css"/>
+</head>
+
+<body>
+    <title>Login to Account</title>
+    <h1>Login to Account</h1>
+	<audio autoplay>
+		<source src="static/youtube.mp3" type="audio/mpeg">
+    </audio>
+  
+     <div class = "navbar">
+		<div class = "dropdown">
+        <button class = "dropbtn1"> LOGIN/REGISTER <i class = "fa fa caret-down"></i></button>
+        <div class = "dropdown-content">
+          <a href = "login.html"> Login </a>
+          <a href = "register.html"> Register </a>
+        </div>
+		</div>
+    <div class = "dropdown">
+      <button class = "dropbtn2"> OTHER <i class = "fa fa caret-down"></i></button>
+      <div class = "dropdown-content">
+        <a href = "index.html"> Home Page </a>
+      </div>
+    </div>
+        
+        <div class = "topnav">
+	        <input type = "search" name = "search" id = "search" placeholder = "Search for tweet..">
+        </div>
+    </div>
+
+    <div id = "wrapper">
+		<header id = "header">
+			<hgroup id = "title">
+        <!-- <img src ="static/twit5.gif" alt = "logo" width = "300" height = "200" style = "padding:10px"> -->
+        <img src ="https://media.giphy.com/media/pZCvWKwehPyUM/giphy.gif" alt = "logo" width = "300" height = "200" style = "padding:10px">
+        <form method="POST" class="post-form" action="{% url 'login' %}" enctype="multipart/form-data">
+          {% csrf_token %}
+          
+          <label for="id_username">
+            Username: 
+          </label>
+          <input type="text" id="id_username" maxlength="30" name="username">
+      
+          <label for="id_password">
+            Password:
+          </label>
+          <input id="id_password" maxlength="30" name="password" type="password">
+      
+          <button type="submit" class="save btn btn-success"> Login </button>
+      </form>
+      <br>
+      <!-- No Account? No Problem! <a href="{% url 'register' %}"> Click Here! </a> to Register for an account. -->
+      No Account? No Problem! <a href={% url 'register' %}> Click Here! </a> to Register for an account.
+			</hgroup> 
+		</header> 
+	 </div> 
+
+</body>
+</html>  
